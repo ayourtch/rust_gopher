@@ -46,7 +46,7 @@ fn main() -> std::io::Result<()> {
 		.get_matches();
 
 	let hostname = matches.value_of("hostname").unwrap_or("localhost");
-	let port :i16 = matches.value_of("port").unwrap_or("70").parse().unwrap();
+	let port :i16 = matches.value_of("port").unwrap_or("7070").parse().unwrap();
 	let dir = matches.value_of("dir").unwrap_or("root");
 	println!("Listening on 0.0.0.0 and port {} as {}", port, hostname);
 
